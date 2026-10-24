@@ -1,0 +1,27 @@
+transConnect — Prototype V1
+============================
+
+Fichier principal : index.html
+
+Pour tester :
+1. Décompressez transconnect_v1.zip sur votre ordinateur.
+2. Ouvrez index.html avec Chrome, Edge ou Firefox.
+3. Créez une demande de transport et/ou enregistrez un transporteur.
+4. Les données sont stockées localement dans le navigateur utilisé.
+
+Fonctionnalités :
+- Page d'accueil responsive
+- Formulaire expéditeur
+- Enregistrement transporteur / camion
+- Liste des demandes et changements de statut
+- Simulation de paiement (aucun paiement réel)
+- Export des données JSON
+
+LIMITES IMPORTANTES :
+- Ce prototype n'est pas encore une application en ligne multi-utilisateurs.
+- Les données ne sont pas synchronisées entre téléphones/ordinateurs.
+- Aucune authentification administrateur.
+- Aucun paiement Mobile Money réel.
+- Aucun message n'est automatiquement envoyé au chauffeur.
+- Ne l'utilisez pas pour stocker des données personnelles ou traiter de vraies commandes.
+Pour un lancement public, il faudra un backend sécurisé, une base de données, une authentification, une intégration Mobile Money validée et des règles opérationnelles/juridiques.

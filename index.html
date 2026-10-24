@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b35">
+<title>transConnect | Pointe-Noire — Brazzaville</title>
+<style>
+:root{--green:#123b35;--green2:#1e6558;--gold:#f2b84b;--ink:#172521;--muted:#64736e;--paper:#f5f7f4;--white:#fff;--line:#e0e7e2;--red:#a33434}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--paper);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer}.topbar{background:var(--green);color:white;padding:15px max(18px,calc((100vw - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:14px;position:sticky;top:0;z-index:5}.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.3px}.brandmark{width:38px;height:38px;border-radius:12px;background:var(--gold);color:var(--green);display:grid;place-items:center;font-size:21px}.brand small{display:block;font-weight:500;opacity:.75;font-size:11px;letter-spacing:.3px}.top-actions{display:flex;gap:8px}.btn{border:0;border-radius:11px;padding:11px 15px;font-weight:700}.btn-gold{background:var(--gold);color:#172521}.btn-light{background:white;color:var(--green)}.btn-outline{border:1px solid var(--line);background:white;color:var(--ink)}.btn-green{background:var(--green);color:white}.btn:disabled{opacity:.45;cursor:not-allowed}.wrap{max-width:1120px;margin:auto;padding:24px 18px 60px}.hero{background:linear-gradient(120deg,#123b35,#1d6658);color:white;border-radius:24px;padding:clamp(24px,5vw,54px);position:relative;overflow:hidden;display:grid;grid-template-columns:1.3fr .7fr;gap:20px;align-items:center}.hero:after{content:"";position:absolute;width:330px;height:330px;border:45px solid #ffffff0d;border-radius:50%;right:-80px;top:-110px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:1.6px;color:var(--gold);font-weight:800}.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.03;letter-spacing:-1.8px;margin:13px 0}.hero p{color:#e2eee8;max-width:590px;line-height:1.65}.route-card{background:#ffffff12;border:1px solid #ffffff2a;border-radius:18px;padding:20px;position:relative;z-index:1}.route{display:flex;align-items:center;gap:12px;margin:12px 0}.dot{width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px #f2b84b22}.route-line{height:30px;border-left:2px dashed #ffffff70;margin-left:5px}.route strong{display:block}.route small{color:#c9ddd6}.hero-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 28px}.stat{background:white;border:1px solid var(--line);border-radius:15px;padding:17px}.stat b{font-size:21px;display:block}.stat span{font-size:12px;color:var(--muted)}.tabs{display:flex;gap:8px;overflow:auto;padding:4px 0 12px;margin:20px 0 8px}.tab{white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:10px 15px;background:white;color:var(--muted);font-weight:700}.tab.active{background:var(--green);border-color:var(--green);color:white}.panel{display:none}.panel.active{display:block}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:22px 0 15px}.section-head h2{margin:0;font-size:25px;letter-spacing:-.7px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:14px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:20px}.card h3{margin:0 0 6px}.muted{color:var(--muted);font-size:13px;line-height:1.5}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:750}.field input,.field select,.field textarea{width:100%;border:1px solid #d7e0da;border-radius:10px;padding:12px;background:white;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green2);box-shadow:0 0 0 3px #1e65581a}.field textarea{min-height:82px;resize:vertical}.notice{background:#fff7e5;border:1px solid #f3dca5;color:#6c4c0c;border-radius:12px;padding:12px 14px;font-size:13px;line-height:1.5;margin:14px 0}.success{background:#e9f7ee;color:#1d6037;border:1px solid #bde5c9}.list{display:grid;gap:12px}.item{background:white;border:1px solid var(--line);border-radius:15px;padding:16px;display:flex;justify-content:space-between;gap:15px;align-items:start}.item h3{margin:0 0 6px;font-size:16px}.item p{margin:4px 0;color:var(--muted);font-size:13px}.pill{display:inline-block;background:#edf3ef;color:#275b4c;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:800}.price{font-size:18px;font-weight:850;white-space:nowrap}.empty{padding:28px;text-align:center;border:1px dashed #cbd7cf;border-radius:15px;color:var(--muted);background:#fff}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.actions .btn{font-size:12px;padding:9px 11px}.footer{border-top:1px solid var(--line);padding:22px 18px;text-align:center;color:var(--muted);font-size:12px}.modalback{display:none;position:fixed;inset:0;background:#091b17a6;z-index:10;align-items:center;justify-content:center;padding:18px}.modalback.open{display:flex}.modal{background:white;border-radius:20px;padding:24px;max-width:520px;width:100%;max-height:90vh;overflow:auto}.modal h2{margin-top:0}.close{float:right;border:0;background:#eef2ef;border-radius:9px;padding:7px 10px}.smallprint{font-size:12px;color:var(--muted);line-height:1.5}.adminbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}.hidden{display:none!important}
+@media(max-width:720px){.hero{grid-template-columns:1fr}.route-card{max-width:420px}.stats{grid-template-columns:1fr 1fr}.stats .stat:last-child{grid-column:1/-1}.grid{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.topbar{padding:12px 14px}.top-actions .btn{padding:9px 10px;font-size:12px}.brand span{font-size:14px}.wrap{padding:16px 12px 42px}.item{flex-direction:column}.price{font-size:17px}.section-head h2{font-size:22px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="brandmark">↗</div><span>transConnect<small>POINTE-NOIRE · BRAZZAVILLE</small></span></div>
+  <div class="top-actions"><button class="btn btn-light" onclick="goTab('transporter')">Transporteurs</button><button class="btn btn-gold" onclick="goTab('ship')">Envoyer un colis</button></div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">La route mieux rentabilisée</div>
+      <h1>Un trajet retour.<br>Une place utile.</h1>
+      <p>Expédiez vos marchandises entre Pointe-Noire et Brazzaville en trouvant des transporteurs disposant de capacité disponible. Une plateforme de mise en relation pour entreprises, particuliers et transporteurs.</p>
+      <div class="hero-buttons"><button class="btn btn-gold" onclick="goTab('ship')">Publier un colis →</button><button class="btn btn-light" onclick="goTab('transporter')">Proposer un camion</button></div>
+    </div>
+    <div class="route-card">
+      <div class="eyebrow">Axe de lancement</div>
+      <div class="route"><div class="dot"></div><div><strong>Pointe-Noire</strong><small>Départ / collecte</small></div></div>
+      <div class="route-line"></div>
+      <div class="route"><div class="dot"></div><div><strong>Brazzaville</strong><small>Arrivée / livraison</small></div></div>
+      <p class="smallprint" style="color:#d9e9e2">Les deux sens peuvent être proposés selon les disponibilités des transporteurs.</p>
+    </div>
+  </section>
+  <section class="stats">
+    <div class="stat"><b id="statShipments">0</b><span>Demandes de transport</span></div>
+    <div class="stat"><b id="statTrucks">0</b><span>Transporteurs enregistrés</span></div>
+    <div class="stat"><b>Mobile Money</b><span>Paiement prévu — intégration à activer</span></div>
+  </section>
+  <nav class="tabs">
+    <button class="tab active" data-tab="home" onclick="goTab('home')">Vue d'ensemble</button>
+    <button class="tab" data-tab="ship" onclick="goTab('ship')">Envoyer un colis</button>
+    <button class="tab" data-tab="transporter" onclick="goTab('transporter')">Enregistrer un camion</button>
+    <button class="tab" data-tab="orders" onclick="goTab('orders')">Commandes</button>
+    <button class="tab" data-tab="admin" onclick="goTab('admin')">Administration</button>
+  </nav>
+
+  <section id="panel-home" class="panel active">
+    <div class="section-head"><div><h2>Comment ça marche ?</h2><p>Un parcours simple pour les expéditeurs comme pour les transporteurs.</p></div></div>
+    <div class="grid">
+      <article class="card"><h3>📦 Vous expédiez ?</h3><p class="muted">Décrivez votre marchandise, indiquez le trajet et la date souhaitée. L'équipe vérifie les possibilités de transport et le tarif avant confirmation.</p><button class="btn btn-green" onclick="goTab('ship')">Créer une demande</button></article>
+      <article class="card"><h3>🚛 Vous transportez ?</h3><p class="muted">Déclarez votre véhicule, votre itinéraire et la capacité restante. Les commandes ne doivent être transmises qu'après validation du paiement et du transport.</p><button class="btn btn-green" onclick="goTab('transporter')">Enregistrer un camion</button></article>
+    </div>
+    <div class="notice"><b>Version de démonstration :</b> les données sont enregistrées dans ce navigateur uniquement. Aucun paiement réel n'est effectué et aucune commande n'est envoyée automatiquement à un chauffeur. Il faudra un serveur sécurisé et un prestataire de paiement pour ouvrir le service au public.</div>
+    <div class="section-head"><div><h2>Dernières demandes</h2><p>Les demandes ajoutées sur cet appareil apparaîtront ici.</p></div><button class="btn btn-outline" onclick="goTab('orders')">Voir les commandes</button></div>
+    <div id="homeRecent" class="list"></div>
+  </section>
+
+  <section id="panel-ship" class="panel">
+    <div class="section-head"><div><h2>Demander un transport</h2><p>Renseignez les informations nécessaires à l'estimation de votre demande.</p></div></div>
+    <div class="card">
+      <form id="shipmentForm">
+        <div class="formgrid">
+          <div class="field"><label for="sender">Nom de l'expéditeur *</label><input id="sender" required maxlength="100" placeholder="Nom et prénom / entreprise"></div>
+          <div class="field"><label for="phone">Téléphone *</label><input id="phone" required type="tel" maxlength="30" placeholder="+242 ..."></div>
+          <div class="field"><label for="from">Ville de départ *</label><select id="from" required><option value="Pointe-Noire">Pointe-Noire</option><option value="Brazzaville">Brazzaville</option></select></div>
+          <div class="field"><label for="to">Ville d'arrivée *</label><select id="to" required><option value="Brazzaville">Brazzaville</option><option value="Pointe-Noire">Pointe-Noire</option></select></div>
+          <div class="field"><label for="goods">Type de marchandise *</label><select id="goods" required><option value="">Choisir...</option><option>Colis / cartons</option><option>Matériel professionnel</option><option>Pièces détachées</option><option>Marchandises commerciales</option><option>Autre — à vérifier</option></select></div>
+          <div class="field"><label for="count">Nombre de colis *</label><input id="count" required type="number" min="1" max="10000" placeholder="Ex. 3"></div>
+          <div class="field"><label for="weight">Poids total estimé (kg) *</label><input id="weight" required type="number" min="0.1" step="0.1" placeholder="Ex. 25"></div>
+          <div class="field"><label for="dimensions">Dimensions / volume</label><input id="dimensions" maxlength="100" placeholder="Ex. 60 × 40 × 40 cm"></div>
+          <div class="field"><label for="date">Date souhaitée *</label><input id="date" required type="date"></div>
+          <div class="field"><label for="value">Valeur déclarée (FCFA) *</label><input id="value" required type="number" min="0" step="500" placeholder="Valeur estimée"></div>
+          <div class="field full"><label for="destinationContact">Nom et téléphone du destinataire *</label><input id="destinationContact" required maxlength="150" placeholder="Nom et numéro de téléphone"></div>
+          <div class="field full"><label for="notes">Instructions complémentaires</label><textarea id="notes" maxlength="500" placeholder="Nature précise, fragilité, conditions particulières..."></textarea></div>
+        </div>
+        <div class="notice">Ne déclarez pas de marchandise interdite ou dangereuse. Cette demande n'est pas une réservation confirmée et aucun prix définitif n'est encore proposé.</div>
+        <button class="btn btn-green" type="submit">Enregistrer la demande</button>
+      </form>
+      <div id="shipResult" class="notice success hidden" role="status"></div>
+    </div>
+  </section>
+
+  <section id="panel-transporter" class="panel">
+    <div class="section-head"><div><h2>Enregistrer un transporteur</h2><p>Indiquez le véhicule et la capacité disponible sur le trajet.</p></div></div>
+    <div class="card">
+      <form id="truckForm">
+        <div class="formgrid">
+          <div class="field"><label for="driver">Nom du transporteur / entreprise *</label><input id="driver" required maxlength="100"></div>
+          <div class="field"><label for="driverPhone">Téléphone *</label><input id="driverPhone" required type="tel" maxlength="30" placeholder="+242 ..."></div>
+          <div class="field"><label for="vehicle">Type de véhicule *</label><select id="vehicle" required><option value="">Choisir...</option><option>Camion poids lourd</option><option>Camion porteur</option><option>Fourgon</option><option>Pick-up</option><option>Autre</option></select></div>
+          <div class="field"><label for="plate">Immatriculation *</label><input id="plate" required maxlength="30" placeholder="Immatriculation du véhicule"></div>
+          <div class="field"><label for="truckFrom">Ville de départ *</label><select id="truckFrom" required><option>Pointe-Noire</option><option>Brazzaville</option></select></div>
+          <div class="field"><label for="truckTo">Ville d'arrivée *</label><select id="truckTo" required><option>Brazzaville</option><option>Pointe-Noire</option></select></div>
+          <div class="field"><label for="capacity">Capacité restante (kg) *</label><input id="capacity" required type="number" min="1" step="1" placeholder="Ex. 1000"></div>
+          <div class="field"><label for="departure">Date de départ prévue *</label><input id="departure" required type="date"></div>
+          <div class="field full"><label for="truckNotes">Informations complémentaires</label><textarea id="truckNotes" maxlength="500" placeholder="Volume disponible, conditions, zones de collecte..."></textarea></div>
+        </div>
+        <div class="notice">Les informations du véhicule et du transporteur devront être vérifiées avant toute prestation réelle.</div>
+        <button class="btn btn-green" type="submit">Enregistrer le transporteur</button>
+      </form>
+      <div id="truckResult" class="notice success hidden" role="status"></div>
+    </div>
+  </section>
+
+  <section id="panel-orders" class="panel">
+    <div class="section-head"><div><h2>Demandes de transport</h2><p>Vue locale de démonstration : les données ne sont visibles que sur ce navigateur.</p></div><button class="btn btn-outline" onclick="exportData()">Exporter les données</button></div>
+    <div class="field" style="max-width:360px;margin-bottom:15px"><label for="filterStatus">Filtrer les demandes</label><select id="filterStatus" onchange="renderOrders()"><option value="">Toutes les demandes</option><option>Nouvelle demande</option><option>Transport à confirmer</option><option>Paiement confirmé</option><option>En cours</option><option>Livré</option><option>Annulé</option></select></div>
+    <div id="ordersList" class="list"></div>
+  </section>
+
+  <section id="panel-admin" class="panel">
+    <div class="section-head"><div><h2>Administration locale</h2><p>Outils de test pour gérer les données de cette démonstration.</p></div></div>
+    <div class="notice"><b>Attention :</b> cet écran n'est pas protégé par un compte administrateur. N'y stockez pas de vraies données personnelles ni de données de paiement. Une version publique doit utiliser une authentification sécurisée et une base de données serveur.</div>
+    <div class="grid">
+      <div class="card"><h3>Transporteurs enregistrés</h3><div id="trucksList" class="list"></div></div>
+      <div class="card"><h3>Gestion des données</h3><p class="muted">Téléchargez une copie des données de démonstration ou effacez les données locales.</p><div class="actions"><button class="btn btn-outline" onclick="exportData()">Exporter JSON</button><button class="btn" style="background:#fff0f0;color:var(--red)" onclick="clearData()">Effacer les données</button></div></div>
+    </div>
+  </section>
+</main>
+<footer class="footer">transConnect · Prototype de démonstration · Pointe-Noire ⇄ Brazzaville<br>Le service réel nécessite validation des transporteurs, règles contractuelles, sécurité et intégration de paiement.</footer>
+
+<div class="modalback" id="paymentModal" role="dialog" aria-modal="true" aria-labelledby="paymentTitle">
+  <div class="modal"><button class="close" onclick="closePayment()">Fermer ✕</button><h2 id="paymentTitle">Paiement — simulation</h2><p id="paymentDescription" class="muted"></p><div class="notice">Cette démonstration ne prélève pas d'argent. Ne saisissez aucun code secret Mobile Money. Le paiement réel sera intégré ultérieurement via un prestataire agréé.</div><div class="field"><label for="demoRef">Référence de test (facultatif)</label><input id="demoRef" placeholder="DEMO-12345"></div><div class="actions"><button class="btn btn-green" onclick="confirmDemoPayment()">Simuler la confirmation</button><button class="btn btn-outline" onclick="closePayment()">Annuler</button></div></div>
+</div>
+<script>
+const KEY='bdf_demo_v1';
+let data=loadData(), pendingId=null;
+function loadData(){try{return JSON.parse(localStorage.getItem(KEY))||{shipments:[],trucks:[]}}catch(e){return {shipments:[],trucks:[]}}}
+function save(){localStorage.setItem(KEY,JSON.stringify(data));renderAll()}
+function id(prefix){return prefix+'-'+Date.now().toString(36).toUpperCase()+'-'+Math.random().toString(36).slice(2,5).toUpperCase()}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function goTab(name){document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+name));document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===name));if(name==='orders'||name==='admin')renderAll();window.scrollTo({top:document.querySelector('.tabs').offsetTop-70,behavior:'smooth'})}
+function formatDate(s){if(!s)return 'Date à confirmer';try{return new Date(s+'T12:00:00').toLocaleDateString('fr-FR')}catch(e){return s}}
+function shipmentCard(s,admin=false){return `<article class="item"><div><span class="pill">${esc(s.status)}</span><h3>${esc(s.from)} → ${esc(s.to)}</h3><p><b>${esc(s.goods)}</b> · ${esc(s.weight)} kg · ${esc(s.count)} colis</p><p>Expéditeur : ${esc(s.sender)} · ${esc(s.phone)}</p><p>Départ souhaité : ${formatDate(s.date)} · Réf. ${esc(s.id)}</p>${admin?`<p>Destinataire : ${esc(s.destinationContact)}</p><p>Valeur déclarée : ${esc(s.value)} FCFA</p><p>Transporteur : ${esc(s.truckName||'Non attribué')}</p>`:''}<div class="actions">${s.status==='Nouvelle demande'?`<button class="btn btn-outline" onclick="setStatus('${s.id}','Transport à confirmer')">Transport trouvé</button>`:''}${s.status==='Transport à confirmer'?`<button class="btn btn-outline" onclick="openPayment('${s.id}')">Simuler paiement</button>`:''}${s.status==='Paiement confirmé'?`<button class="btn btn-outline" onclick="setStatus('${s.id}','En cours')">Départ effectué</button>`:''}${s.status==='En cours'?`<button class="btn btn-outline" onclick="setStatus('${s.id}','Livré')">Confirmer livré</button>`:''}${!['Livré','Annulé'].includes(s.status)?`<button class="btn" style="background:#fff0f0;color:#9d3030" onclick="setStatus('${s.id}','Annulé')">Annuler</button>`:''}</div></div><div class="price">${s.price?Number(s.price).toLocaleString('fr-FR')+' F':'À estimer'}</div></article>`}
+function renderOrders(){const filter=document.getElementById('filterStatus')?.value||'';const items=data.shipments.filter(s=>!filter||s.status===filter).slice().reverse();document.getElementById('ordersList').innerHTML=items.length?items.map(s=>shipmentCard(s,true)).join(''):'<div class="empty">Aucune demande pour le moment. Créez une première demande de transport.</div>'}
+function renderAll(){document.getElementById('statShipments').textContent=data.shipments.length;document.getElementById('statTrucks').textContent=data.trucks.length;const recent=data.shipments.slice(-3).reverse();document.getElementById('homeRecent').innerHTML=recent.length?recent.map(s=>shipmentCard(s,false)).join(''):'<div class="empty">Les demandes de transport apparaîtront ici après leur création.</div>';renderOrders();const t=data.trucks.slice().reverse();document.getElementById('trucksList').innerHTML=t.length?t.map(x=>`<article class="item"><div><h3>${esc(x.name)}</h3><p>${esc(x.vehicle)} · ${esc(x.plate)}</p><p>${esc(x.from)} → ${esc(x.to)} · ${esc(x.capacity)} kg disponibles</p><p>Départ : ${formatDate(x.departure)} · ${esc(x.phone)}</p></div></article>`).join(''):'<div class="empty">Aucun transporteur enregistré.</div>'}
+document.getElementById('shipmentForm').addEventListener('submit',e=>{e.preventDefault();const from=document.getElementById('from').value,to=document.getElementById('to').value;if(from===to){alert("La ville de départ et d'arrivée doivent être différentes.");return}const s={id:id('BDF'),sender:document.getElementById('sender').value.trim(),phone:document.getElementById('phone').value.trim(),from,to,goods:document.getElementById('goods').value,count:document.getElementById('count').value,weight:document.getElementById('weight').value,dimensions:document.getElementById('dimensions').value,date:document.getElementById('date').value,value:document.getElementById('value').value,destinationContact:document.getElementById('destinationContact').value.trim(),notes:document.getElementById('notes').value,status:'Nouvelle demande',price:null,paymentRef:null,createdAt:new Date().toISOString()};data.shipments.push(s);save();const r=document.getElementById('shipResult');r.classList.remove('hidden');r.innerHTML=`Demande enregistrée dans ce navigateur. Référence : <b>${esc(s.id)}</b>. Ce n'est pas encore une réservation confirmée.`;e.target.reset();goTab('orders')});
+document.getElementById('truckForm').addEventListener('submit',e=>{e.preventDefault();const from=document.getElementById('truckFrom').value,to=document.getElementById('truckTo').value;if(from===to){alert("Les villes doivent être différentes.");return}const t={id:id('TRK'),name:document.getElementById('driver').value.trim(),phone:document.getElementById('driverPhone').value.trim(),vehicle:document.getElementById('vehicle').value,plate:document.getElementById('plate').value.trim(),from,to,capacity:document.getElementById('capacity').value,departure:document.getElementById('departure').value,notes:document.getElementById('truckNotes').value,createdAt:new Date().toISOString()};data.trucks.push(t);save();const r=document.getElementById('truckResult');r.classList.remove('hidden');r.textContent='Transporteur enregistré sur cet appareil. Les informations doivent être vérifiées avant toute mission.';e.target.reset()});
+function setStatus(sid,status){const s=data.shipments.find(x=>x.id===sid);if(!s)return;if(status==='Paiement confirmé')return; s.status=status;save()}
+function openPayment(sid){const s=data.shipments.find(x=>x.id===sid);if(!s)return;pendingId=sid;document.getElementById('paymentDescription').textContent=`Commande ${s.id} — ${s.from} vers ${s.to}. Ceci est une simulation, aucun paiement réel ne sera effectué.`;document.getElementById('demoRef').value='';document.getElementById('paymentModal').classList.add('open')}
+function closePayment(){document.getElementById('paymentModal').classList.remove('open');pendingId=null}
+function confirmDemoPayment(){const s=data.shipments.find(x=>x.id===pendingId);if(!s)return;s.status='Paiement confirmé';s.paymentRef='SIMULATION-'+(document.getElementById('demoRef').value.trim()||Date.now());s.paymentMode='DEMO — NON RÉEL';save();closePayment();alert('Statut de démonstration mis à jour. Aucun argent n’a été encaissé.')}
+function exportData(){const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='transconnect-demo.json';a.click();URL.revokeObjectURL(a.href)}
+function clearData(){if(!confirm('Effacer toutes les demandes et tous les transporteurs de ce navigateur ? Cette action est irréversible.'))return;data={shipments:[],trucks:[]};save()}
+const today=new Date();document.getElementById('date').min=today.toISOString().slice(0,10);document.getElementById('departure').min=today.toISOString().slice(0,10);renderAll();
+</script>
+</body>
+</html>
