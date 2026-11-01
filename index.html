@@ -147,3 +147,40 @@ const today=new Date();document.getElementById('date').min=today.toISOString().s
 </script>
 </body>
 </html>
+<div class="grid" style="margin-bottom:16px">
+  <section class="card">
+    <h3>Connexion Supabase</h3>
+    <p class="muted">Connectez-vous avec le compte chauffeur ou client associé à la commande.</p>
+    <div class="field">
+      <label for="sbEmail">E-mail</label>
+      <input id="sbEmail" type="email" autocomplete="email">
+    </div>
+    <div class="field" style="margin-top:10px">
+      <label for="sbPassword">Mot de passe</label>
+      <input id="sbPassword" type="password" autocomplete="current-password">
+    </div>
+    <div class="actions">
+      <button class="btn btn-green" type="button" id="sbSignIn">Se connecter</button>
+      <button class="btn btn-outline" type="button" id="sbSignUp">Créer un compte</button>
+      <button class="btn btn-outline" type="button" id="sbSignOut">Se déconnecter</button>
+    </div>
+    <p id="sbAuthStatus" class="muted" role="status">Non connecté.</p>
+  </section>
+
+  <section class="card">
+    <h3>Suivi GPS d’une commande</h3>
+    <p class="muted">Saisissez l’UUID d’une commande Supabase, pas la référence locale BDF-…</p>
+    <div class="field">
+      <label for="trackingOrderId">UUID de la commande</label>
+      <input id="trackingOrderId" autocomplete="off" placeholder="UUID fourni par transport_orders">
+    </div>
+    <div class="actions">
+      <button class="btn btn-green" type="button" id="startGps">Démarrer le GPS chauffeur</button>
+      <button class="btn btn-outline" type="button" id="stopGps">Arrêter le GPS chauffeur</button>
+      <button class="btn btn-outline" type="button" id="watchGps">Suivre comme client</button>
+      <button class="btn btn-outline" type="button" id="stopWatchingGps">Arrêter le suivi client</button>
+    </div>
+    <p id="gpsStatus" class="muted" role="status">Aucun suivi actif.</p>
+    <p id="gpsPosition" class="muted" aria-live="polite"></p>
+  </section>
+</div>
